@@ -1,3 +1,13 @@
-<Page xmlns="http://schemas.nativescript.org/tns.xsd">
+<Page loaded="onPageLoaded" xmlns="http://schemas.nativescript.org/tns.xsd">
 	<!-- UI Declaration -->
+   
+    <ListView items="{{photoItems}}"row="0">
+    
+    <ListView.itemTemplate>
+    <GridLayout>
+    <Image imageSource="{{itemImages}}" row="0"/>
+    </GridLayout>
+    </ListView.itemTemplate>
+    </ListView>
+    <Button text="No Demetre" row="1"/>
 </Page>
